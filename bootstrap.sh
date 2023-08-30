@@ -16,6 +16,8 @@ function doIt()
 
 	# Install Vundle pulgin
 	vim +PluginInstall +qall
+
+	cp -r ./awesome-vim-colorschemes/color/* ~/.vim/color
 }
 
 if [ "$1" == "--force" -o "$1" == "-f" ]; then
