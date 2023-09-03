@@ -30,6 +30,7 @@ Plugin 'http://github.com/terryma/vim-multiple-cursors' "same keword editing sam
 Plugin 'http://github.com/junegunn/vim-easy-align' "                                    usage : ga
 Plugin 'scrooloose/syntastic' "syntax check                                             usage : lopen
 Plugin  'preservim/nerdcommenter' "convinience comment 									usage : \+c+i, \+c+m <->  \+c+space
+Plugin 'morhetz/gruvbox'
 call vundle#end()
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " http://github.com/tpope/vim-surround
@@ -59,7 +60,7 @@ let g:airline#extensions#tabline#buffer_idx_mode = 1
 nmap <leader>1 <Plug>AirlineSelectTab1
 nmap <leader>2 <Plug>AirlineSelectTab2
 nmap <leader>3 <Plug>AirlineSelectTab3
-nmap <leader>4 <Plug>AirlineSelectTab4
+nmap <leaser>4 <Plug>AirlineSelectTab4
 nmap <leader>5 <Plug>AirlineSelectTab5
 nmap <leader>6 <Plug>AirlineSelectTab6
 nmap <leader>7 <Plug>AirlineSelectTab7
@@ -176,8 +177,8 @@ set bs=indent,eol,start
 
 " 인코딩 설정
 " 문서를 읽을 때 BOM 을 자동으로 제거하려면, fencs 맨 앞에 ucs-bom 를 추가하세요.
-set fenc=utf-8
-set fencs=utf-8,cp949,cp932,euc-jp,shift-jis,big5,latin1,ucs-2le
+"set fenc=utf-8
+"set fencs=utf-8,cp949,cp932,euc-jp,shift-jis,big5,latin1,ucs-2le
 
 " backup 파일 자동생성 안함
 set nobackup
@@ -251,7 +252,8 @@ set report=0
 set ls=2
 
 "colorscheme torte
-colorscheme molokai
+"colorscheme molokai
+colorscheme gruvbox
 if has("unix")
 highlight Comment ctermfg=Green
 highlight Statement ctermfg=Brown
@@ -274,7 +276,11 @@ highlight String guifg=gray80 gui=none
 highlight verilogConstant guifg=gray80 gui=none
 endif
 
-
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" gruvbox Setting
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set background=dark
+let g:gruvbox_contrast_dark='soft'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " indent 설정
