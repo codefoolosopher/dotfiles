@@ -117,3 +117,7 @@ export DISPLAY=172.30.1.7:0.0
 
 # Xilinx Vivado
 source /opt/tools/xilinx/Vivado/2023.1/settings64.sh
+
+
+# NPIT FTP
+alias npftp="sftp -oPort=6090 npftp@180.67.220.82"
